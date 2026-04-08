@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "KHUSHI",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/2TR98a0Zas2k3Qc8wFcQK1DFvhi0GC2M6HKonGU6U1y0mlfFTK/",
+  "gitHubUrl": "https://github.com/khushipadmakar/Marklogic_Dagster_DBT",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

@@ -1,0 +1,124 @@
+[2026-04-08 10:50:00Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-04-08 10:50:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:00Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'Runner': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.runner'
+[2026-04-08 10:50:01Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-04-08 10:50:01Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-04-08 10:50:01Z INFO Listener] Version: 2.333.1
+[2026-04-08 10:50:01Z INFO Listener] Commit: 6792966801e8925346735b68c03bf9f347af4646
+[2026-04-08 10:50:01Z INFO Listener] Culture: en-BS
+[2026-04-08 10:50:01Z INFO Listener] UI Culture: en-GB
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO Listener] Validating directory permissions for: 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO CommandLineParser] Parse
+[2026-04-08 10:50:01Z INFO CommandLineParser] Parsing 1 args
+[2026-04-08 10:50:01Z INFO CommandLineParser] parsing argument
+[2026-04-08 10:50:01Z INFO CommandLineParser] HasArgs: False
+[2026-04-08 10:50:01Z INFO CommandLineParser] Adding Command: run
+[2026-04-08 10:50:01Z INFO Listener] Arguments parsed
+[2026-04-08 10:50:01Z INFO Runner] ExecuteCommand
+[2026-04-08 10:50:01Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\HP\Downloads\MarkLogic\actions-runner\bin\Runner.Listener.dll
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] binPath: C:\Users\HP\Downloads\MarkLogic\actions-runner\bin
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] RootFolder: C:\Users\HP\Downloads\MarkLogic\actions-runner
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'Runner': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.runner'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] ConfigFilePath: C:\Users\HP\Downloads\MarkLogic\actions-runner\.runner
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.runner_migrated'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\HP\Downloads\MarkLogic\actions-runner\.runner_migrated
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] CredFilePath: C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_migrated'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_migrated
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'Service': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.service'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\HP\Downloads\MarkLogic\actions-runner\.service
+[2026-04-08 10:50:01Z INFO CommandSettings] Flag 'help': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Flag 'version': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Flag 'check': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Command 'configure': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Command 'remove': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Command 'warmup': 'False'
+[2026-04-08 10:50:01Z INFO ConfigurationManager] LoadSettings
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsConfigured()
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsConfigured: True
+[2026-04-08 10:50:01Z INFO ConfigurationManager] Is configured: True
+[2026-04-08 10:50:01Z INFO ConfigurationStore] Read setting file: 406 chars
+[2026-04-08 10:50:01Z INFO ConfigurationManager] Settings Loaded
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsServiceConfigured: True
+[2026-04-08 10:50:01Z INFO CommandSettings] Command 'run': 'True'
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsConfigured()
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsConfigured: True
+[2026-04-08 10:50:01Z INFO ConfigurationManager] Is configured: True
+[2026-04-08 10:50:01Z INFO Runner] Try determine runner startup type base on console redirects.
+[2026-04-08 10:50:01Z INFO Runner] Set runner startup type - Manual
+[2026-04-08 10:50:01Z INFO CommandSettings] Flag 'once': 'False'
+[2026-04-08 10:50:01Z INFO CommandSettings] Flag 'once': 'False'
+[2026-04-08 10:50:01Z INFO Runner] RunAsync
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Work': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\_work'
+[2026-04-08 10:50:01Z INFO Runner] Validating directory permissions for: 'C:\Users\HP\Downloads\MarkLogic\actions-runner\_work'
+[2026-04-08 10:50:01Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-04-08 10:50:01Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2026-04-08 10:50:01Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2026-04-08 10:50:01Z INFO Runner] Falling back to original .runner settings
+[2026-04-08 10:50:01Z INFO Runner] Using BrokerMessageListener
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] Using provided settings
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] {
+  "AgentId": 2,
+  "AgentName": "KHUSHI",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/2TR98a0Zas2k3Qc8wFcQK1DFvhi0GC2M6HKonGU6U1y0mlfFTK/",
+  "GitHubUrl": "https://github.com/khushipadmakar/Marklogic_Dagster_DBT",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] Loading Credentials
+[2026-04-08 10:50:01Z INFO ConfigurationStore] HasCredentials()
+[2026-04-08 10:50:01Z INFO ConfigurationStore] stored True
+[2026-04-08 10:50:01Z INFO CredentialManager] GetCredentialProvider
+[2026-04-08 10:50:01Z INFO CredentialManager] Creating type OAuth
+[2026-04-08 10:50:01Z INFO CredentialManager] Creating credential type: OAuth
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Bin': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\bin'
+[2026-04-08 10:50:01Z INFO HostContext] Well known directory 'Root': 'C:\Users\HP\Downloads\MarkLogic\actions-runner'
+[2026-04-08 10:50:01Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_rsaparams'
+[2026-04-08 10:50:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_rsaparams
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] Attempt to create session.
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2026-04-08 10:50:01Z INFO ConfigurationStore] HasCredentials()
+[2026-04-08 10:50:01Z INFO ConfigurationStore] stored True
+[2026-04-08 10:50:01Z INFO CredentialManager] GetCredentialProvider
+[2026-04-08 10:50:01Z INFO CredentialManager] Creating type OAuth
+[2026-04-08 10:50:01Z INFO CredentialManager] Creating credential type: OAuth
+[2026-04-08 10:50:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_rsaparams
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] VssConnection created
+[2026-04-08 10:50:01Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2026-04-08 10:50:01Z INFO RunnerServer] EstablishVssConnection
+[2026-04-08 10:50:01Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-04-08 10:50:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-04-08 10:50:01Z INFO RunnerServer] EstablishVssConnection
+[2026-04-08 10:50:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-04-08 10:50:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-04-08 10:50:01Z INFO RunnerServer] EstablishVssConnection
+[2026-04-08 10:50:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-04-08 10:50:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
