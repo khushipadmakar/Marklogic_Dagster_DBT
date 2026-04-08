@@ -1,10 +1,12 @@
 import psycopg2
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
 def test_gold_table_exists():
     conn = psycopg2.connect(
-        dbname="order_quality_analytics_db",
-        user="postgres",
-        password="Khushboo@2004",
+        dbname=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv("POSTGRES_PASSWORD"),
         host="localhost",
         port="5432"
     )
