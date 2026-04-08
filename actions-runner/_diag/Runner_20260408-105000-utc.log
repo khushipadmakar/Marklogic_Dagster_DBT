@@ -122,3 +122,16 @@
 [2026-04-08 10:50:01Z INFO RunnerServer] EstablishVssConnection
 [2026-04-08 10:50:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
 [2026-04-08 10:50:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-04-08 10:50:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-04-08 10:50:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-04-08 10:50:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-04-08 10:50:03Z INFO BrokerMessageListener] VssConnection created
+[2026-04-08 10:50:03Z INFO Terminal] WRITE LINE: 
+[2026-04-08 10:50:03Z INFO Terminal] WRITE LINE: 
+[2026-04-08 10:50:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_rsaparams
+[2026-04-08 10:50:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\HP\Downloads\MarkLogic\actions-runner\.credentials_rsaparams
+[2026-04-08 10:50:05Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-04-08 10:50:06Z INFO BrokerMessageListener] Session created.
+[2026-04-08 10:50:06Z INFO Terminal] WRITE LINE: Current runner version: '2.333.1'
+[2026-04-08 10:50:06Z INFO Terminal] WRITE LINE: 2026-04-08 10:50:06Z: Listening for Jobs
+[2026-04-08 10:50:06Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.

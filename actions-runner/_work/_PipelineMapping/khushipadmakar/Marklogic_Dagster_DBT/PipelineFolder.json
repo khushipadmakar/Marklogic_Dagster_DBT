@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "khushipadmakar/Marklogic_Dagster_DBT",
+  "pipelineDirectory": "Marklogic_Dagster_DBT",
+  "workspaceDirectory": "Marklogic_Dagster_DBT\\Marklogic_Dagster_DBT",
+  "repositories": {
+    "khushipadmakar/Marklogic_Dagster_DBT": {
+      "repositoryPath": "Marklogic_Dagster_DBT\\Marklogic_Dagster_DBT",
+      "lastRunOn": "04/08/2026 16:27:34 +05:30"
+    }
+  },
+  "lastRunOn": "04/08/2026 16:27:34 +05:30"
+}
