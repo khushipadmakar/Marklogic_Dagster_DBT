@@ -89,9 +89,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:   # ✅ IMPORTANT FIX
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: order_quality_analytics_db
+      POSTGRES_USER: os.getenv("POSTGRES_USER")
+      POSTGRES_PASSWORD: os.getenv("POSTGRES_PASSWORD")
+      POSTGRES_DB: os.getenv("POSTGRES_DB")
 
     services:
       postgres:
