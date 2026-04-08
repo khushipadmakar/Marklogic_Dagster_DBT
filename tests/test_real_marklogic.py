@@ -39,10 +39,13 @@
 
 
 import sys
-import os
 import pandas as pd
-import pytest
 from dotenv import load_dotenv
+import os
+import pytest
+
+if os.getenv("CI") == "true":
+    pytest.skip("Skipping MarkLogic test in CI", allow_module_level=True)
 
 load_dotenv()
 
@@ -53,7 +56,7 @@ from load_to_marklogic import load_to_marklogic
 
 @pytest.mark.integration
 def test_real_marklogic_load():
-    from marklogic import Client
+    from marklogic import Client 
 
     df = pd.DataFrame([
         {
