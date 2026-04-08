@@ -4,6 +4,8 @@ from sqlalchemy import create_engine
 from requests.auth import HTTPDigestAuth
 import os
 from dotenv import load_dotenv
+from dotenv import load_dotenv
+load_dotenv()
 
 # -------------------------------
 # PostgreSQL Connection
@@ -20,7 +22,7 @@ def fetch_transformed_data(uri):
     
     response = requests.get(
         url,
-        auth=HTTPDigestAuth("khushboopadmakar", "Khushboo@2004")
+        auth=HTTPDigestAuth(os.getenv("ML_USERNAME"), os.getenv("ML_PASSWORD"))
     )
 
     print(f"\nFetching: {uri}")
