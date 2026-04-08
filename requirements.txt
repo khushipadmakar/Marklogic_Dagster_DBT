@@ -1,9 +1,17 @@
+# pandas
+# boto3
+# requests
+# python-dotenv
+# pytest
+# marklogic-python-client
+# pip install -r requirements.txt
+# dbt-postgres
+# pytest
+
+
 pandas
 boto3
 requests
 python-dotenv
 pytest
-marklogic-python-client
-pip install -r requirements.txt
-pip install dbt-postgres
-pytest
+dbt-postgres
