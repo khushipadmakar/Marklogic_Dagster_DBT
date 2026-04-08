@@ -133,7 +133,7 @@ jobs:
               dev:
                 type: postgres
                 host: localhost
-                user: $POSTGRES_USER
+                user: "postgres"
                 password: $POSTGRES_PASSWORD
                 port: 5432
                 dbname: $POSTGRES_DB
