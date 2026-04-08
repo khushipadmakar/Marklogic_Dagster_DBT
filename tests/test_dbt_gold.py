@@ -2,6 +2,10 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 load_dotenv()
+from dotenv import load_dotenv
+import os
+
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
 def test_gold_table_exists():
     conn = psycopg2.connect(
         dbname=os.getenv("POSTGRES_DB"),
