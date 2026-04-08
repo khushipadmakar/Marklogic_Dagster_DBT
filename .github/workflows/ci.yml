@@ -129,10 +129,10 @@ jobs:
               dev:
                 type: postgres
                 host: localhost
-                user: postgres
-                password: postgres
+                user: os.getenv("POSTGRES_USER")
+                password: os.getenv("POSTGRES_PASSWORD")
                 port: 5432
-                dbname: order_quality_analytics_db
+                dbname: os.getenv("POSTGRES_DB")
                 schema: public
                 threads: 1
           EOF
