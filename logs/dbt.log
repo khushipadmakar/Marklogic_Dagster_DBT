@@ -1,0 +1,104 @@
+[0m16:05:40.037394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203DE1D74D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203DBFF1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203DEDA4910>]}
+
+
+============================== 16:05:40.054654 | 4bba2dfc-4ca2-4f96-82d5-481ee12affab ==============================
+[0m16:05:40.054654 [info ] [MainThread]: Running with dbt=1.11.7
+[0m16:05:40.056123 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init order_analytics', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:05:40.125440 [debug] [MainThread]: Starter project path: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\include\starter_project
+[0m16:05:40.192452 [info ] [MainThread]: 
+Your new dbt project "order_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:05:40.197310 [info ] [MainThread]: Setting up your profile.
+[0m16:07:04.977346 [info ] [MainThread]: Profile order_analytics written to C:\Users\HP\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:07:04.983751 [debug] [MainThread]: Command `dbt init` succeeded at 16:07:04.982180 after 85.37 seconds
+[0m16:07:04.985984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203DF43FA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203E05985F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203DF23FCE0>]}
+[0m16:07:04.991308 [debug] [MainThread]: Flushing usage events
+[0m16:07:07.248289 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:36:16.843831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D92370B4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D92152D090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9242DC910>]}
+
+
+============================== 23:36:16.859271 | f95be3f7-5e7f-41f5-bc5f-5aec56898e99 ==============================
+[0m23:36:16.859271 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:36:16.860037 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs serve', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:36:16.860554 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Downloads\MarkLogic\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:36:16.861368 [debug] [MainThread]: Command `dbt docs serve` failed at 23:36:16.861262 after 0.21 seconds
+[0m23:36:16.861650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9249748A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D92496D6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D924776F10>]}
+[0m23:36:16.861937 [debug] [MainThread]: Flushing usage events
+[0m23:36:18.906391 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:11:34.178835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217535474D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217513AD090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021754120910>]}
+
+
+============================== 12:11:34.188909 | 43f0423a-1d43-49dd-9939-aed66e3fc8de ==============================
+[0m12:11:34.188909 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:11:34.189713 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:11:34.190161 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Downloads\MarkLogic\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:11:34.191042 [debug] [MainThread]: Command `dbt docs serve` failed at 12:11:34.190929 after 0.16 seconds
+[0m12:11:34.191343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217547A4B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217547B16D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217545AF130>]}
+[0m12:11:34.191742 [debug] [MainThread]: Flushing usage events
+[0m12:11:37.443780 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:11:59.300392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455E1DB4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455C02D090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455EDB0910>]}
+
+
+============================== 12:11:59.305388 | ec9b77a4-54ed-42f1-9d76-4a75f04f81ab ==============================
+[0m12:11:59.305388 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:11:59.306164 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs generate', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:11:59.306787 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Downloads\MarkLogic\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:11:59.307739 [debug] [MainThread]: Command `dbt docs generate` failed at 12:11:59.307574 after 0.14 seconds
+[0m12:11:59.308193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455F438B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455F4496D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455F243130>]}
+[0m12:11:59.308540 [debug] [MainThread]: Flushing usage events
+[0m12:12:01.285149 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:12:07.466323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD26D774D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD24BCD090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD27950910>]}
+
+
+============================== 12:12:07.470878 | 06f34088-96ed-4f04-a1df-61f8ac1e2f2d ==============================
+[0m12:12:07.470878 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:12:07.471642 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:12:07.472041 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Downloads\MarkLogic\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:12:07.473079 [debug] [MainThread]: Command `dbt docs serve` failed at 12:12:07.472976 after 0.12 seconds
+[0m12:12:07.473359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD27FD4B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD27FE16D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD27DDF130>]}
+[0m12:12:07.473653 [debug] [MainThread]: Flushing usage events
+[0m12:12:09.383398 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:12:45.814960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D8FAAB4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D8D8FD090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D90680910>]}
+
+
+============================== 12:12:45.819718 | 9d8860b6-9b77-4c4d-8f25-4bc04e0df5a4 ==============================
+[0m12:12:45.819718 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:12:45.820374 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:12:45.820778 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Downloads\MarkLogic\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:12:45.821697 [debug] [MainThread]: Command `dbt docs serve` failed at 12:12:45.821594 after 0.11 seconds
+[0m12:12:45.821972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D90D04B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D90D116D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D90B0F130>]}
+[0m12:12:45.822253 [debug] [MainThread]: Flushing usage events
+[0m12:12:48.287885 [debug] [MainThread]: An error was encountered while trying to flush usage events

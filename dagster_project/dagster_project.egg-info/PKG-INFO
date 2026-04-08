@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: dagster_project
+Version: 0.1.0
+Summary: Dagster project
+Requires-Python: >=3.8

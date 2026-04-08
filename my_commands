@@ -1,0 +1,3 @@
+python -m etl.silver_pipeline
+
+
