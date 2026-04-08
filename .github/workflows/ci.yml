@@ -73,7 +73,6 @@
 #           dbt run
 
 
-
 name: ETL CI Pipeline
 
 on:
@@ -88,6 +87,11 @@ env:
 jobs:
   build-test:
     runs-on: ubuntu-latest
+
+    env:   # ✅ IMPORTANT FIX
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: order_quality_analytics_db
 
     services:
       postgres:
@@ -129,10 +133,10 @@ jobs:
               dev:
                 type: postgres
                 host: localhost
-                user: os.getenv("POSTGRES_USER")
-                password: os.getenv("POSTGRES_PASSWORD")
+                user: $POSTGRES_USER
+                password: $POSTGRES_PASSWORD
                 port: 5432
-                dbname: os.getenv("POSTGRES_DB")
+                dbname: $POSTGRES_DB
                 schema: public
                 threads: 1
           EOF
