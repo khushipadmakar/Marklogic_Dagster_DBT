@@ -1,11 +1,8 @@
 name: 'order_analytics'
 version: '1.0.0'
-config-version: 2
 
-# Profile name must match profiles.yml
 profile: 'order_analytics'
 
-# Paths
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -13,17 +10,12 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
 
-# Model configurations
 models:
   order_analytics:
-    +materialized: table
     gold:
       +materialized: table
-    silver:
-      +materialized: view
-    staging:
-      +materialized: view

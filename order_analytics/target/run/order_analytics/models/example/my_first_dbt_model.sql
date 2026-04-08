@@ -2,7 +2,7 @@
   
     
 
-  create  table "order_quality_analytics_db"."myschema"."my_first_dbt_model__dbt_tmp"
+  create  table "order_quality_analytics_db"."public"."my_first_dbt_model__dbt_tmp"
   
   
     as

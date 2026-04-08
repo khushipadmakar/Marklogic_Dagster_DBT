@@ -1,0 +1,12 @@
+order_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: Khushboo@2004
+      dbname: order_quality_analytics_db
+      schema: public
+      port: 5432
+      threads: 4
