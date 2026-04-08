@@ -3393,3 +3393,342 @@ drop view if exists "order_quality_analytics_db"."myschema"."my_second_dbt_model
 [0m12:40:59.718265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023685AF5750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023685C278D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023684354670>]}
 [0m12:40:59.718855 [debug] [MainThread]: Flushing usage events
 [0m12:41:02.834539 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:38.288948 [error] [MainThread]: Encountered an error:
+
+[0m17:31:38.613130 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\cli\main.py", line 307, in docs_serve
+    results = task.run()
+  File "C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Program Files\Python313\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:31:38.679178 [debug] [MainThread]: Command `dbt docs serve` failed at 17:31:38.675055 after 19049.32 seconds
+[0m17:31:38.709193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002348B9D6350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002348B9D6250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002348B9B2B70>]}
+[0m17:31:38.722412 [debug] [MainThread]: Flushing usage events
+[0m17:31:41.363300 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:54.481194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE58BE74D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE56A2D090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE597C0910>]}
+
+
+============================== 17:31:54.492467 | 8cd26133-870d-4496-8097-7dddead98225 ==============================
+[0m17:31:54.492467 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:31:54.505733 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\HP\\Downloads\\MarkLogic\\order_analytics\\logs'}
+[0m17:31:56.275529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE59179350>]}
+[0m17:31:56.744269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE59C4F020>]}
+[0m17:31:56.789535 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m17:31:57.856132 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:32:00.649226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:32:00.649959 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:32:00.650418 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:32:00.745908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B2ED950>]}
+[0m17:32:00.931836 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\Downloads\MarkLogic\order_analytics\target\manifest.json
+[0m17:32:00.961173 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\Downloads\MarkLogic\order_analytics\target\semantic_manifest.json
+[0m17:32:01.029221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE59E168A0>]}
+[0m17:32:01.030136 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 464 macros
+[0m17:32:01.031215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B58CAD0>]}
+[0m17:32:01.034115 [info ] [MainThread]: 
+[0m17:32:01.034840 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:32:01.035579 [info ] [MainThread]: 
+[0m17:32:01.036505 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:32:01.046625 [debug] [ThreadPool]: Acquiring new postgres connection 'list_order_quality_analytics_db'
+[0m17:32:05.950732 [debug] [ThreadPool]: Using postgres connection "list_order_quality_analytics_db"
+[0m17:32:05.951263 [debug] [ThreadPool]: On list_order_quality_analytics_db: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "connection_name": "list_order_quality_analytics_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:32:05.951665 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:32:06.175478 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.224 seconds
+[0m17:32:06.178373 [debug] [ThreadPool]: On list_order_quality_analytics_db: Close
+[0m17:32:06.185685 [debug] [ThreadPool]: Acquiring new postgres connection 'list_order_quality_analytics_db_myschema'
+[0m17:32:06.207988 [debug] [ThreadPool]: Using postgres connection "list_order_quality_analytics_db_myschema"
+[0m17:32:06.209317 [debug] [ThreadPool]: On list_order_quality_analytics_db_myschema: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "connection_name": "list_order_quality_analytics_db_myschema"} */
+select
+      'order_quality_analytics_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'myschema'
+    union all
+    select
+      'order_quality_analytics_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'myschema'
+    union all
+    select
+      'order_quality_analytics_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'myschema'
+  
+[0m17:32:06.210051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:32:06.308907 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.099 seconds
+[0m17:32:06.311858 [debug] [ThreadPool]: On list_order_quality_analytics_db_myschema: ROLLBACK
+[0m17:32:06.318655 [debug] [ThreadPool]: On list_order_quality_analytics_db_myschema: Close
+[0m17:32:06.336514 [debug] [MainThread]: Using postgres connection "master"
+[0m17:32:06.338167 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m17:32:06.340153 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:32:06.456770 [debug] [MainThread]: SQL status: SELECT 1 in 0.117 seconds
+[0m17:32:06.459721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B8C0E20>]}
+[0m17:32:06.460554 [debug] [MainThread]: On master: ROLLBACK
+[0m17:32:06.461468 [debug] [MainThread]: On master: COMMIT
+[0m17:32:06.462026 [debug] [MainThread]: Using postgres connection "master"
+[0m17:32:06.462529 [debug] [MainThread]: On master: COMMIT
+[0m17:32:06.463263 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:32:06.463648 [debug] [MainThread]: On master: Close
+[0m17:32:06.574085 [debug] [Thread-1 (]: Began running node model.order_analytics.agg_order_status_summary
+[0m17:32:06.574902 [info ] [Thread-1 (]: 1 of 3 START sql table model myschema.agg_order_status_summary ................. [RUN]
+[0m17:32:06.576017 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.order_analytics.agg_order_status_summary'
+[0m17:32:06.576729 [debug] [Thread-1 (]: Began compiling node model.order_analytics.agg_order_status_summary
+[0m17:32:06.591295 [debug] [Thread-1 (]: Writing injected SQL for node "model.order_analytics.agg_order_status_summary"
+[0m17:32:06.593528 [debug] [Thread-1 (]: Began executing node model.order_analytics.agg_order_status_summary
+[0m17:32:06.701404 [debug] [Thread-1 (]: Writing runtime sql for node "model.order_analytics.agg_order_status_summary"
+[0m17:32:06.704275 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.agg_order_status_summary"
+[0m17:32:06.705964 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.agg_order_status_summary"} */
+
+  
+    
+
+  create  table "order_quality_analytics_db"."myschema"."agg_order_status_summary__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT
+    platform,
+
+    COUNT(*) AS total_orders,
+
+    SUM("order_value_(inr)") AS total_revenue,
+
+    AVG("order_value_(inr)") AS avg_order_value,
+
+    SUM(CASE WHEN order_status = 'valid' THEN 1 ELSE 0 END) AS valid_orders,
+    SUM(CASE WHEN order_status = 'invalid' THEN 1 ELSE 0 END) AS invalid_orders,
+    SUM(CASE WHEN order_status = 'duplicate' THEN 1 ELSE 0 END) AS duplicate_orders,
+    SUM(CASE WHEN order_status = 'high_value' THEN 1 ELSE 0 END) AS high_value_orders,
+    SUM(CASE WHEN order_status = 'payment_failed' THEN 1 ELSE 0 END) AS payment_failed_orders,
+    SUM(CASE WHEN order_status = 'late_delivery' THEN 1 ELSE 0 END) AS late_delivery_orders,
+    SUM(CASE WHEN order_status = 'suspicious' THEN 1 ELSE 0 END) AS suspicious_orders
+
+FROM "order_quality_analytics_db"."public"."fct_transformed_orders"
+
+GROUP BY platform
+  );
+  
+[0m17:32:06.706964 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:32:07.064864 [debug] [Thread-1 (]: SQL status: SELECT 3 in 0.358 seconds
+[0m17:32:07.084551 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.agg_order_status_summary"
+[0m17:32:07.085333 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.agg_order_status_summary"} */
+alter table "order_quality_analytics_db"."myschema"."agg_order_status_summary" rename to "agg_order_status_summary__dbt_backup"
+[0m17:32:07.089487 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m17:32:07.094164 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.agg_order_status_summary"
+[0m17:32:07.094903 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.agg_order_status_summary"} */
+alter table "order_quality_analytics_db"."myschema"."agg_order_status_summary__dbt_tmp" rename to "agg_order_status_summary"
+[0m17:32:07.096259 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:32:07.139286 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: COMMIT
+[0m17:32:07.147217 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.agg_order_status_summary"
+[0m17:32:07.148507 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: COMMIT
+[0m17:32:07.159457 [debug] [Thread-1 (]: SQL status: COMMIT in 0.008 seconds
+[0m17:32:07.192113 [debug] [Thread-1 (]: Applying DROP to: "order_quality_analytics_db"."myschema"."agg_order_status_summary__dbt_backup"
+[0m17:32:07.201833 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.agg_order_status_summary"
+[0m17:32:07.203801 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.agg_order_status_summary"} */
+drop table if exists "order_quality_analytics_db"."myschema"."agg_order_status_summary__dbt_backup" cascade
+[0m17:32:07.218654 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.013 seconds
+[0m17:32:07.224461 [debug] [Thread-1 (]: On model.order_analytics.agg_order_status_summary: Close
+[0m17:32:07.230184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B938B90>]}
+[0m17:32:07.231334 [info ] [Thread-1 (]: 1 of 3 OK created sql table model myschema.agg_order_status_summary ............ [[32mSELECT 3[0m in 0.65s]
+[0m17:32:07.233121 [debug] [Thread-1 (]: Finished running node model.order_analytics.agg_order_status_summary
+[0m17:32:07.233768 [debug] [Thread-1 (]: Began running node model.order_analytics.my_first_dbt_model
+[0m17:32:07.238413 [info ] [Thread-1 (]: 2 of 3 START sql table model myschema.my_first_dbt_model ....................... [RUN]
+[0m17:32:07.240247 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.order_analytics.agg_order_status_summary, now model.order_analytics.my_first_dbt_model)
+[0m17:32:07.240978 [debug] [Thread-1 (]: Began compiling node model.order_analytics.my_first_dbt_model
+[0m17:32:07.245356 [debug] [Thread-1 (]: Writing injected SQL for node "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.247133 [debug] [Thread-1 (]: Began executing node model.order_analytics.my_first_dbt_model
+[0m17:32:07.258232 [debug] [Thread-1 (]: Writing runtime sql for node "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.259886 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.261024 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_first_dbt_model"} */
+
+  
+    
+
+  create  table "order_quality_analytics_db"."myschema"."my_first_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m17:32:07.261675 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:32:07.348874 [debug] [Thread-1 (]: SQL status: SELECT 2 in 0.087 seconds
+[0m17:32:07.354081 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.354849 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_first_dbt_model"} */
+alter table "order_quality_analytics_db"."myschema"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m17:32:07.356464 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:32:07.360340 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.360995 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_first_dbt_model"} */
+alter table "order_quality_analytics_db"."myschema"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m17:32:07.362414 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:32:07.364875 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: COMMIT
+[0m17:32:07.365429 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.365828 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: COMMIT
+[0m17:32:07.367611 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m17:32:07.371155 [debug] [Thread-1 (]: Applying DROP to: "order_quality_analytics_db"."myschema"."my_first_dbt_model__dbt_backup"
+[0m17:32:07.372337 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_first_dbt_model"
+[0m17:32:07.372931 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_first_dbt_model"} */
+drop table if exists "order_quality_analytics_db"."myschema"."my_first_dbt_model__dbt_backup" cascade
+[0m17:32:07.380168 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.007 seconds
+[0m17:32:07.382709 [debug] [Thread-1 (]: On model.order_analytics.my_first_dbt_model: Close
+[0m17:32:07.384675 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B7AD5A0>]}
+[0m17:32:07.386278 [info ] [Thread-1 (]: 2 of 3 OK created sql table model myschema.my_first_dbt_model .................. [[32mSELECT 2[0m in 0.14s]
+[0m17:32:07.388235 [debug] [Thread-1 (]: Finished running node model.order_analytics.my_first_dbt_model
+[0m17:32:07.389556 [debug] [Thread-1 (]: Began running node model.order_analytics.my_second_dbt_model
+[0m17:32:07.390770 [info ] [Thread-1 (]: 3 of 3 START sql view model myschema.my_second_dbt_model ....................... [RUN]
+[0m17:32:07.394564 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.order_analytics.my_first_dbt_model, now model.order_analytics.my_second_dbt_model)
+[0m17:32:07.395863 [debug] [Thread-1 (]: Began compiling node model.order_analytics.my_second_dbt_model
+[0m17:32:07.413115 [debug] [Thread-1 (]: Writing injected SQL for node "model.order_analytics.my_second_dbt_model"
+[0m17:32:07.422629 [debug] [Thread-1 (]: Began executing node model.order_analytics.my_second_dbt_model
+[0m17:32:07.476511 [debug] [Thread-1 (]: Writing runtime sql for node "model.order_analytics.my_second_dbt_model"
+[0m17:32:07.478283 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_second_dbt_model"
+[0m17:32:07.480600 [debug] [Thread-1 (]: On model.order_analytics.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_second_dbt_model"} */
+
+  create view "order_quality_analytics_db"."myschema"."my_second_dbt_model__dbt_tmp"
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "order_quality_analytics_db"."myschema"."my_first_dbt_model"
+where id = 1
+  );
+[0m17:32:07.481863 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:32:07.586361 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.104 seconds
+[0m17:32:07.594453 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_second_dbt_model"
+[0m17:32:07.595444 [debug] [Thread-1 (]: On model.order_analytics.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_second_dbt_model"} */
+alter table "order_quality_analytics_db"."myschema"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m17:32:07.597252 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:32:07.599225 [debug] [Thread-1 (]: On model.order_analytics.my_second_dbt_model: COMMIT
+[0m17:32:07.599756 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_second_dbt_model"
+[0m17:32:07.600245 [debug] [Thread-1 (]: On model.order_analytics.my_second_dbt_model: COMMIT
+[0m17:32:07.602423 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:32:07.607661 [debug] [Thread-1 (]: Applying DROP to: "order_quality_analytics_db"."myschema"."my_second_dbt_model__dbt_backup"
+[0m17:32:07.613664 [debug] [Thread-1 (]: Using postgres connection "model.order_analytics.my_second_dbt_model"
+[0m17:32:07.614495 [debug] [Thread-1 (]: On model.order_analytics.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "order_analytics", "target_name": "dev", "node_id": "model.order_analytics.my_second_dbt_model"} */
+drop view if exists "order_quality_analytics_db"."myschema"."my_second_dbt_model__dbt_backup" cascade
+[0m17:32:07.616421 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m17:32:07.618996 [debug] [Thread-1 (]: On model.order_analytics.my_second_dbt_model: Close
+[0m17:32:07.620160 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8cd26133-870d-4496-8097-7dddead98225', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE59DDFF70>]}
+[0m17:32:07.622349 [info ] [Thread-1 (]: 3 of 3 OK created sql view model myschema.my_second_dbt_model .................. [[32mCREATE VIEW[0m in 0.23s]
+[0m17:32:07.627479 [debug] [Thread-1 (]: Finished running node model.order_analytics.my_second_dbt_model
+[0m17:32:07.629851 [debug] [MainThread]: On master: COMMIT
+[0m17:32:07.630579 [debug] [MainThread]: Using postgres connection "master"
+[0m17:32:07.631156 [debug] [MainThread]: On master: COMMIT
+[0m17:32:07.631694 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:32:07.719942 [debug] [MainThread]: SQL status: COMMIT in 0.088 seconds
+[0m17:32:07.720782 [debug] [MainThread]: On master: Close
+[0m17:32:07.721685 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:32:07.730068 [debug] [MainThread]: Connection 'list_order_quality_analytics_db' was properly closed.
+[0m17:32:07.731014 [debug] [MainThread]: Connection 'list_order_quality_analytics_db_myschema' was properly closed.
+[0m17:32:07.731549 [debug] [MainThread]: Connection 'model.order_analytics.my_second_dbt_model' was properly closed.
+[0m17:32:07.743595 [info ] [MainThread]: 
+[0m17:32:07.747496 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 6.70 seconds (6.70s).
+[0m17:32:07.755398 [debug] [MainThread]: Command end result
+[0m17:32:07.840989 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\Downloads\MarkLogic\order_analytics\target\manifest.json
+[0m17:32:07.865377 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\Downloads\MarkLogic\order_analytics\target\semantic_manifest.json
+[0m17:32:07.881884 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\Downloads\MarkLogic\order_analytics\target\run_results.json
+[0m17:32:07.882732 [info ] [MainThread]: 
+[0m17:32:07.883860 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:32:07.886827 [info ] [MainThread]: 
+[0m17:32:07.887677 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:32:07.894806 [debug] [MainThread]: Command `dbt run` succeeded at 17:32:07.893916 after 14.62 seconds
+[0m17:32:07.895733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B489750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE5B5B78D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE59E34670>]}
+[0m17:32:07.896491 [debug] [MainThread]: Flushing usage events
+[0m17:32:10.520483 [debug] [MainThread]: An error was encountered while trying to flush usage events
